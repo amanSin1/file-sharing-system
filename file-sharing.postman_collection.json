@@ -1,0 +1,381 @@
+{
+	"info": {
+		"_postman_id": "d3e46306-a5c5-4168-9d99-29e8516fc290",
+		"name": "New Collection",
+		"description": "File sharing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46716569",
+		"_collection_link": "https://amansingh-9417473.postman.co/workspace/7bb6900f-67f4-4f5c-8ecf-15ba6381d89d/collection/46716569-d3e46306-a5c5-4168-9d99-29e8516fc290?action=share&source=collection_link&creator=46716569"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/login/",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"kullumanali0123@gmail.com\",\r\n  \"password\": \"password\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/login/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/upload/",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUyNDIyMDg0LCJpYXQiOjE3NTI0MTg0ODQsImp0aSI6ImRjMTg3YzQwYjAxNjQyNjg5OGM1ODdhY2ZiNzcyOTc2IiwidXNlcl9pZCI6MX0.c1KDpFO1-Uj1XDatNTSW34edi6T0r1_ebtJi-19ROhw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": []
+						},
+						{
+							"key": "file_type",
+							"value": "xlsx",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/upload/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"upload",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/signup/",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUyNDIyMDg0LCJpYXQiOjE3NTI0MTg0ODQsImp0aSI6ImRjMTg3YzQwYjAxNjQyNjg5OGM1ODdhY2ZiNzcyOTc2IiwidXNlcl9pZCI6MX0.c1KDpFO1-Uj1XDatNTSW34edi6T0r1_ebtJi-19ROhw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"client2@example.com\",\r\n  \"password\": \"client2password\",\r\n  \"password_confirm\": \"client2password\",\r\n  \"username\": \"client2name\",\r\n  \"user_type\": \"client\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/signup/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"signup",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/signup/",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUyNDIyMDg0LCJpYXQiOjE3NTI0MTg0ODQsImp0aSI6ImRjMTg3YzQwYjAxNjQyNjg5OGM1ODdhY2ZiNzcyOTc2IiwidXNlcl9pZCI6MX0.c1KDpFO1-Uj1XDatNTSW34edi6T0r1_ebtJi-19ROhw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"test@gmail.com\",\r\n  \"password\": \"password\",\r\n  \"password_confirm\": \"password\",\r\n  \"username\": \"testname\",\r\n  \"user_type\": \"client\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/signup/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"signup",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/verify-email/3f48fb16-0efb-4702-9a62-108a8356b829/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUyNDIyMDg0LCJpYXQiOjE3NTI0MTg0ODQsImp0aSI6ImRjMTg3YzQwYjAxNjQyNjg5OGM1ODdhY2ZiNzcyOTc2IiwidXNlcl9pZCI6MX0.c1KDpFO1-Uj1XDatNTSW34edi6T0r1_ebtJi-19ROhw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"test2@gmail.com\",\r\n  \"password\": \"password\",\r\n  \"password_confirm\": \"password\",\r\n  \"username\": \"testname2\",\r\n  \"user_type\": \"client\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/verify-email/3f48fb16-0efb-4702-9a62-108a8356b829/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"verify-email",
+						"3f48fb16-0efb-4702-9a62-108a8356b829",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/login/",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUyNDIyMDg0LCJpYXQiOjE3NTI0MTg0ODQsImp0aSI6ImRjMTg3YzQwYjAxNjQyNjg5OGM1ODdhY2ZiNzcyOTc2IiwidXNlcl9pZCI6MX0.c1KDpFO1-Uj1XDatNTSW34edi6T0r1_ebtJi-19ROhw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"test2@gmail.com\",\r\n  \"password\": \"password\"\r\n  \r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/login/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/files/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUyNDIzNDY5LCJpYXQiOjE3NTI0MTk4NjksImp0aSI6IjhkMGNlMTdkOWYzMDQ3NDE4ZjQxZThkNWYzODM1ZjViIiwidXNlcl9pZCI6NX0.0KiCsP6rR7eIyc2jm73HlyVkqGweiGpLbFCoG0xcJgk",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"test2@gmail.com\",\r\n  \"password\": \"password\"\r\n  \r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/files/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"files",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/files/1/download-url/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUyNDIzNDY5LCJpYXQiOjE3NTI0MTk4NjksImp0aSI6IjhkMGNlMTdkOWYzMDQ3NDE4ZjQxZThkNWYzODM1ZjViIiwidXNlcl9pZCI6NX0.0KiCsP6rR7eIyc2jm73HlyVkqGweiGpLbFCoG0xcJgk",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"test2@gmail.com\",\r\n  \"password\": \"password\"\r\n  \r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/files/1/download-url/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"files",
+						"1",
+						"download-url",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/download/Z0FBQUFBQm9jODUtdVhaQy1RaGR6REJQYTRyN3VvMG9rMklWVTVtUDhQSVZCbUtwZjI3cXBXLTgxMWUwSWl2amNNLXJUQ3g1T0JtMlY1Z2p4ZC1vUGt2d2lCcEl4VVRYU1lCYjJ4Qm9vR2plazlsUXBTdnBySEFUR0w5eGlDbWR0T3V2RTByaVYwTTI=/",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/download/Z0FBQUFBQm9jODUtdVhaQy1RaGR6REJQYTRyN3VvMG9rMklWVTVtUDhQSVZCbUtwZjI3cXBXLTgxMWUwSWl2amNNLXJUQ3g1T0JtMlY1Z2p4ZC1vUGt2d2lCcEl4VVRYU1lCYjJ4Qm9vR2plazlsUXBTdnBySEFUR0w5eGlDbWR0T3V2RTByaVYwTTI=/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"download",
+						"Z0FBQUFBQm9jODUtdVhaQy1RaGR6REJQYTRyN3VvMG9rMklWVTVtUDhQSVZCbUtwZjI3cXBXLTgxMWUwSWl2amNNLXJUQ3g1T0JtMlY1Z2p4ZC1vUGt2d2lCcEl4VVRYU1lCYjJ4Qm9vR2plazlsUXBTdnBySEFUR0w5eGlDbWR0T3V2RTByaVYwTTI=",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
