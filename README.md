@@ -10,7 +10,7 @@ This project is a **secure file-sharing system** built with Django and Django RE
 - 🔐 JWT Authentication
 - 🗃️ File Upload (with file type metadata)
 - 📥 Secure Download URL generation (only for clients)
-- ✉️ Email-based verification
+- ✉️ Email-based verification  // Django console backend for email verification in development.
 - 📁 File visibility only after verification
 
 ---
